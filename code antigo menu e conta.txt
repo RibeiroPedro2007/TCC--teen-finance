@@ -1,0 +1,412 @@
+css
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(34,34,34);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.conteudo {
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+    max-width: 500px; /* Limita a largura do texto */
+    color: #fff; /* Cor do texto */
+}
+
+img{
+    width: 400px;
+    margin-left: 100px;
+    width: 100px;
+}
+
+/* Estilos para o container da imagem */
+.image-container {
+    display: flex;          /* Define o container como um flex container */
+    justify-content: center; /* Centraliza a imagem horizontalmente no container */
+    align-items: center;    /* Centraliza a imagem verticalmente no container */
+    height: 1px;           /* Opcional: Define a altura do container, ajuste conforme necessário */
+    margin-left: 720px;    /* Ajuste a margem conforme necessário */
+}
+
+/* Estilos para a imagem */
+.image-container img {
+    width: 500px;          /* Largura da imagem */
+    height: auto;         /* Mantém a proporção da imagem */
+}
+
+
+
+.conteudo {
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+
+    color: #fff; /* Cor do texto */
+}
+
+img {
+    width: 400px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+/*estilos de letras------------------------------------------------------------------------------------------------------*/
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 100px;
+}
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 20px;
+}
+p {
+    font-size: 0.7rem;
+    color: #fff;
+    margin-top: 20px;
+}
+.conteudo{
+    margin-top: 80px;
+    margin-left: 100px;
+    max-width: 500px;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*design do menu lateral-----------------------------------------------------------------------------------------------*/
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(132,14,201);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-lateral {
+    position: relative; /* Necessário para que os submenus se posicionem corretamente em relação ao menu */
+    overflow: hidden; /* Garante que submenus não empurrem o conteúdo */
+}
+
+nav.menu-lateral:hover{
+    width: 300px;
+}
+
+.expandir div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.expandir{
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;/*some as bolinhas pretas de marcação de um item na lista*/
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;/*tira o sublinhado dos links*/
+    font-size: 20px;
+    padding: 10px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ul li.item-menu:hover{
+    background: rgb(132,14,201);
+}
+
+ul li.item-menu{
+    transition: 0.5s;
+}
+
+ul li.item-menu2 a .icon > i{
+    font-size: 30px;
+    margin-left: 14px;
+}
+
+ul li.item-menu2:hover{
+    background: rgb(132,14,201);
+}
+
+ul li.item-menu2{
+    transition: 0.5s;
+}
+
+ul li.item-menu2 a{
+    color: #fff;
+    text-decoration: none;/*tira o sublinhado dos links*/
+    font-size: 20px;
+    padding: 10px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+ul li.item-menu2 a .txt-link{
+    margin-left: 40px;
+}
+
+.sub-menu {
+    display: none; /* Começa oculto */
+    margin-bottom: 30px;
+}
+
+.sub-menu.show {
+    display: block; /* Exibe o submenu */
+}
+
+ul li.item-menu3 a{
+    color: #fff;
+    text-decoration: none;/*tira o sublinhado dos links*/
+    font-size: 17px;
+    padding: 10px 4%;
+    display: flex;
+    line-height: 20px;
+}
+
+ul li.item-menu3 a .txt-link{
+    margin-left: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul li.item-menu3 a .icon > i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+ul li.item-menu3:hover{
+    background: rgb(132,14,201);
+}
+
+ul li.item-menu3{
+    transition: 0.5s;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*menu de cima---------------------------------------------------------------------------------------------------------*/
+nav.Menu-bottom{
+    background-color: #202020;
+    box-shadow: 0px 3px 10px #464646;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 6rem;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color: #fff;
+}
+.bottom-list{
+    display: flex;
+    margin-right: 90px;
+}
+
+.bottom-list ul{
+    position: absolute;
+}
+
+.bottom-item{
+    margin: 5px;
+}
+
+.bottom-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.bottom-linkDaConta{
+    text-decoration: none;
+    font-size: 1.50rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+
+.bottom-linkDaConta:hover{
+    color: rgb(132,14,201);
+    transition: 0.3s;
+    border: 2px solid rgb(132,14,201);
+    padding: 3px;
+    border-radius: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.account-menu {
+    display: none;
+    width: 180px;
+    height: 185px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgb(132,14,201);
+    border-radius: 20px;
+    padding: 1rem 0.5rem; /* Reduzindo o padding interno */
+}
+
+/*text-decoration: none;
+    =color: #fff;
+   = line-height: 30px;
+   = border-radius: 15px;
+   = font-size: 1rem;
+   = display: inline-block;
+    margin-left: 15px;
+    font-weight: 600;
+    border: 2px solid rgb(132, 14, 201);
+    padding: 2px;
+  =  margin: 5px;*/
+
+
+  /*arrumado
+
+  hover:background-color: rgb(132, 14, 201);
+    transition: 0.5s;
+
+    menu-a:
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    line-height: 29px;
+    border-radius: 10px;
+    font-size: large;
+    margin-left: 9px;
+    border: 2px;
+    padding: 3px;
+}
+  */
+
+.account-menu.show {
+    display: block; /* Exibe o menu quando a classe 'show' é adicionada */
+}
+
+.account-menu a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin: 14px;
+    line-height: 25px;
+    border-radius: 10px;
+    font-size: large;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.account-menu a:hover {
+    background-color: rgb(132,14,201);
+    border: 2px solid rgb(132, 14, 201);
+    transition: 0.5s;
+}
+
+.account-menu li {
+    display: block;
+}
+
+
+
+java
+
+// Função para alternar a visibilidade do menu
+function toggleMenu() {
+    var menu = document.getElementById('accountMenu');
+    menu.classList.toggle('show');
+}
+
+// Função para fechar o menu se o clique for fora da área do menu e do botão
+function handleClickOutside(event) {
+    var menu = document.getElementById('accountMenu');
+    var button = document.querySelector('.bottom-linkDaConta'); // Corrigido o seletor para o botão correto
+
+    // Verifica se o clique foi fora do menu e do botão
+    if (!menu.contains(event.target) && button && !button.contains(event.target)) {
+        menu.classList.remove('show');
+    }
+}
+
+// Adiciona o listener para o clique no documento
+document.addEventListener('click', handleClickOutside);
+
+// Função para alternar a visibilidade do segundo menu
+function toggleMenu2() {
+    var menu2 = document.getElementById('mostrar');
+    if (menu2) {
+        menu2.classList.toggle('show');
+    }
+}
+
+// Função para alternar o submenu de cursos
+function toggleSubMenu(event) {
+    event.preventDefault(); // Previne o comportamento padrão do link
+
+    // Seleciona o submenu de cursos
+    const subMenu = document.getElementById('cursosSubMenu');
+
+    // Seleciona todos os submenus para ocultá-los
+    const allSubMenus = document.querySelectorAll('.sub-menu');
+
+    // Verifica se o submenu está visível
+    const isVisible = subMenu.classList.contains('show');
+
+    // Oculta todos os submenus
+    allSubMenus.forEach(menu => menu.classList.remove('show'));
+
+    // Alterna a visibilidade do submenu atual
+    if (!isVisible) {
+        subMenu.classList.add('show');
+    }
+}

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    background-image: url('fundi.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto você rola a página */
+    color: white;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 300px; /* Agora o formulário tem uma largura máxima de 300px */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+fieldset {
+    border: 3px solid rgb(132,14,201);
+    padding: 10px;
+}
+
+legend {
+    border: 1px solid rgb(132,14,201);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(132,14,201);
+    color: white;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser, .inputUser2 {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 8px; /* Font-size menor para caber melhor */
+    width: 100%;
+    padding: 8px 0; /* Ajustei o padding para as entradas */
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: white;
+}
+
+.inputUser2:focus ~ .labelInput,
+.inputUser2:not(:placeholder-shown) ~ .labelInput {
+    top: -20px; /* A label sobe */
+    font-size: 12px; /* Tamanho reduzido da fonte */
+    color: white; /* Cor da label */
+}
+
+#login {
+    background-image: linear-gradient(to right, rgb(90, 92, 197), rgb(132, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 12px; /* Ajustei o padding para o botão */
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-image 0.3s;
+    margin-top: 10px;
+}
+
+#login:hover {
+    background-image: linear-gradient(to right, rgb(90, 0, 172), rgb(132, 19, 195));
+}
+
+.error-message {
+    color: #ff4d4d; /* Cor de erro (vermelha) */
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 10px 10px;
+    visibility: hidden; /* Esconde a mensagem por padrão */
+}
+
+.error-message.visible {
+    visibility: visible; /* Exibe a mensagem de erro quando necessário */
+}
+
+a {
+    color: white; /* Cor inicial do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 14px;
+}
+
+a:hover {
+    color: rgb(132, 20, 220); /* Cor ao passar o mouse */
+}
+
+a:active {
+    color: rgb(132, 20, 220); /* Cor ao clicar */
+}
+
+#showPasswordBtn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    filter: invert(100%);
+    margin-top: 12px;
+    margin-right: 10px;
+  }
